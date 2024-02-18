@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>The start wars</title>
+    <style>
+      .hide {
+        display: none;
+      }
+      .columna {
+        width: 33%;
+        float: left;
+      }
+
+      @media (max-width: 500px) {
+        .columna {
+          width: auto;
+          float: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="grey darken-4" role="navigation">
+        <div class="nav-wrapper container">
+          <a id="logo-container" href="#" class="brand-logo yellow-text"
+            >THE STAR WARS</a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <!-- Register Screen -->
+    <div id="registro" class="hide">
+      <h4 id="headerRegister">Register</h4>
+
+      <form action="">
+        <div class="row">
+          <div class="input-field col s12">
+            <i class="material-icons prefix">mail</i>
+            <label for="1">Email:</label><br />
+            <input type="email" class="input" name="email" id="1" />
+            <br /><br />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s12">
+            <i class="material-icons prefix">person</i>
+            <label for="2">Username:</label><br />
+            <input type="text" name="username" id="2" />
+            <br /><br />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s12">
+            <i class="material-icons prefix">account_circle</i>
+            <label for="3">Full Name:</label><br />
+            <input type="text" class="input" name="name" id="3" />
+            <br /><br />
+          </div>
+        </div>
+        <button
+          id="btn"
+          class="btn waves-effect waves-light color-green btn-large"
+          type="submit"
+        >
+          Register
+        </button>
+        <!-- <button type="submit">Register</button> -->
+      </form>
+    </div>
+
+    <!-- Details movies Screen -->
+    <div id="movies" class="hide">
+      <!-- The first column show Titles. -->
+      <div class="columna">
+        <h5>Movies titles</h5>
+        <ul></ul>
+      </div>
+
+      <!-- The second column show info for every movie. -->
+      <div class="columna">
+        <h5>Movie Info</h5>
+        <ul></ul>
+        <ul id="planetName"></ul>
+      </div>
+
+      <!-- The third column show info planets. -->
+      <div class="columna">
+        <h5>Planet Info</h5>
+        <ul></ul>
+      </div>
+    </div>
+  </body>
+</html>

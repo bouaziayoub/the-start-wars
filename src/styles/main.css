@@ -1,0 +1,57 @@
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+.collection-item img {
+  max-height: 100px;
+}
+.collection-item:hover {
+  background-color: #ffecb3;
+  cursor: pointer;
+}
+.fav-image {
+  margin-top: -20px;
+}
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+main {
+  flex: 1 0 auto;
+}
+
+#registro {
+  width: 50%;
+  margin: auto;
+}
+
+#headerRegister {
+  text-align: center;
+}
+
+#movies {
+  width: 95%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.columna h5 {
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: underline;
+  color: #e89e10;
+  text-align: center;
+}
+
+.columna ul {
+  margin-left: 35px;
+  margin-top: 40px;
+}
+
+.pointer {
+  cursor: pointer;
+  line-height: 5rem;
+}
